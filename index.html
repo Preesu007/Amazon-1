@@ -1,16 +1,145 @@
 <html>
-<head><title>my Amazon site</title>
-<style>
-h1{ color:grey}
-</style>
-</head>
-<body style="background-color:green;border:10px dashed black">
-<h1>Amazon 100 days challenge<h1><hr>
-<ol>
-<p><li>HTML</li>
-<li>CSS</li>
-<li>JS</li>
-<li>BOOTSTRAP</li></p>
-</ol>
-</body>
-</html>
+    <head>
+        <title>amazon</title>
+    <style>
+        .parent{
+             margin: 2px;
+            background-color: black;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        .child{
+            color:aliceblue;
+            padding: 10px;
+            margin:0px ;
+            border: 1px solid black;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .super{
+            background-color: green;
+            border: 1px solid black;
+            display: flex;
+            flex-direction:row;
+            flex-grow: 1;
+            height: 30px;
+        }
+       .sub{ 
+        background-color: transparent;
+        border:1px solid black ;
+        text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding-top: 5px;
+       }
+       .high{
+        background-color:lightgrey;
+            border: 1px solid black;
+            display: flex;
+            flex-direction:row;
+             height:320px;
+       }
+       .low{
+        border: 1px solid black;
+        display: flex;
+flex-direction: column;  }
+.hi{
+    background-color: rgb(101, 141, 101);
+            border: 1px solid black;
+            display: flex;
+            flex-direction:row;
+  height:300px;
+  padding-top: 100px;
+  flex-grow: 1;
+
+}
+
+.ok{
+    border: 1px solid black;
+        display: flex;
+flex-direction: column;
+flex-grow: 1;
+}
+
+    </style>
+    </head>
+
+    <body>
+        <div class="parent" >
+            <div class="child">
+                <img src="./amalogo.webp" height="100" width="200">
+            </div>
+            
+            <div class="child">
+               <h3 style ="font: size 10px">SELECT YOUR ADDRESS</h3>
+            </div>
+            <div  class="child"><br>
+                <br>
+                <input type="text">
+                <img src="./search.webp"height="20px" width="20px">
+            </div>
+            <div class="child"><br>
+                <label name="lang">choose a language</label>
+             <select name="language" id="language">
+             <option value="Telugu">Telugu</option>
+             <option value="hindi">Hindi</option>
+             <option value="English">English</option>
+             <option value="Tamil">Tamil</option>
+             <option value="Kannada">Kannada</option>
+             <option value="Urdu">Urdu</option></select>
+            </div>
+            <div class="child">
+                <p>Hello,sign in<br>
+                <b>Accounts&Lists</b> </p>
+
+            </div>
+            <div class="child">
+                <p>Returns<br>&Orders</p></div>
+            <div  class="child">
+                <img src="./cart.webp"height="40px" width="40px">
+            </div>
+        </div>
+        <div class="super">
+        <div class="sub">≡All</div>
+        <div class="sub">Sell</div>
+        <div class="sub">Todays deals</div>
+        <div class="sub">Mobiles</div>
+        <div class="sub">Electronics</div>
+        <div class="sub">Home & Kitchen</div>
+        <div class="sub">Prime</div>
+        <div class="sub">New Releases</div>
+        <div class="sub">Amazon pay</div>
+        <div class="sub"style="flex-grow:2">Download Amazon App</div>
+        </div>
+        <div class="high">
+            <div class="low" style="flex-grow:1;color:brown"><h1>Today Deals</h1>
+            </div>
+            <div class="low" style="flex-grow:2;">
+       <img src="./oneplus.jpg" height="200px" width="150px"><h3 style="color:red">OnePlus Nord 2T 5G</h3> (12GB RAM, <br>256GB Storage)<br>
+        ₹33,999 <br>
+            </div> 
+            <div class="low" style="flex-grow:2;">
+        <img src="./redmi10.jpg"height="210px"width="150px">
+       <h3 style="color:red">Redmi 10A</h3><br>Charcoal Black,<br> 4GB RAM, 64GB Storage<br>
+        ₹11,999 (21% off)
+        
+            </div>
+            <div class="low" style="flex-grow:2;">
+                <img src="./samsunggalaxy.jpg"height="200px"width="150px"><h3 style="color:red"> Samsung Galaxy M33</h3> (Emerald Brown,<br> 6GB, 128GB Storage)<br>₹18,999.00
+            </div>
+            <div class="low" style="flex-grow:2;">
+                <img src="./redmi.jpg"height="210px"width="150px"><h3 style="color:red">Redmi A1</h3>(Sea Blue,<br> 4GB RAM, 64GB Storage)<br>₹9,499.00
+            </div>
+        </div>
+        <div class="hi">
+        <div class="ok" style="padding-left: 10px;"><img src="cate1.jpg" height="400px" width="500px">
+        </div>
+        <div class="ok"><img src="cate2.jpg" height="400px" width="500px"></div>
+        <div class="ok"style="text-align:center;"><h1> Create new amazon<br> account here<br><a href="signuppage.html">SIGN UP</a></h1></div>
+    </div>
+</body></html>
+    
+    
